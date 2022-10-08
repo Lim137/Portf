@@ -1,0 +1,22 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+.header{
+    
+    height: 700px;
+    max-width: 100%;
+    padding: 0px,0px,58%,0px;
+    background: url(https://opttour.ru/wp-content/uploads/2015/08/slidemodif1.jpg) center / cover no-repeat;
+    /* display: flex; */
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.header h1{
+    /* vertical-align:middle; 
+    display:table-cell;*/
+    text-align: center; 
+    /* vertical-align: middle; */
+    color: rgb(0, 0, 0);
+}
