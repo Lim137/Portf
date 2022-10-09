@@ -28,10 +28,14 @@ body{
     max-width: 100%;
     background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614339712_91-p-svetlii-fon-dlya-saita-106.jpg) center / cover no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    
+    flex-direction: column;
   
+}
+.container h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .footer{
     height:200px;
@@ -43,3 +47,21 @@ body{
 .footer{
     color: aliceblue;
 }
+.table{
+    
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    column-gap: 20px;
+    text-align: center;
+}
+.col a{
+    
+    color: blue;
+    
+    width: 33.3333%;
+    
+    
+}
+
