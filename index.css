@@ -1,12 +1,17 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-left: 0;
-    margin-right: 0;
+  background-color: rgb(44, 41, 41);
+    margin: 0;
 }
+.page{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header{
-    
+
     height: 550px;
-    max-width: 100%;
+    
    
     background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614364776_8-p-svetlii-stilnii-fon-9.jpg) center / cover no-repeat;
     /* display: flex; */
@@ -24,22 +29,81 @@ body{
 }
 
 .container{
-    height: 800px;
-    max-width: 100%;
+    
+    box-sizing: border-box;
+    padding-top: 10%;
+   max-height: 100%;
+    
     background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614339712_91-p-svetlii-fon-dlya-saita-106.jpg) center / cover no-repeat;
     display: flex;
-    
+    padding-bottom: 10%;
     flex-direction: column;
   
 }
 .container h2{
-    margin-top: 100px;
+    
     margin-bottom: 20px;
     text-align: center;
 }
+.table{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    column-gap: 20px;
+    text-align: center;
+}
+.col{
+    width: 33.3333%
+}
+.col img{
+    width: 100%;
+    max-height: 100%;
+}
+.col a{
+    
+    color: blue;
+    font-size: 20px;
+    width: 100%;
+    
+    
+}
+
+@media (max-width: 767px){
+    .page{
+        max-width: none;
+    }
+    .container{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .table{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .col{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+ 
+    .header h1{
+        font-size: 25px;
+    }
+    .container h2{
+        font-size: 18px;
+    }
+   .header{
+        height: 300px;
+    } 
+ 
+}
 .footer{
+   
     height:200px;
-    max-width:100%;
+    
     background: url(https://ra.ac.ae/wp-content/uploads/2014/07/section-BG-dark.jpg) center / cover no-repeat;
   
     display: flex;
@@ -47,21 +111,5 @@ body{
 .footer{
     color: aliceblue;
 }
-.table{
-    
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    column-gap: 20px;
-    text-align: center;
-}
-.col a{
-    
-    color: blue;
-    
-    width: 33.3333%;
-    
-    
-}
+
 
