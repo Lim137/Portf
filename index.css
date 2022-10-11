@@ -72,12 +72,12 @@ body{
 }
 .footer{
    
-    height:200px;
-    
+    max-height: 100%;
+    padding: 25px 0;
     background: url(https://ra.ac.ae/wp-content/uploads/2014/07/section-BG-dark.jpg) center / cover no-repeat;
   
     display: flex;
-    color: aliceblue;
+    color: white;
     
 }
 .footer_profile{
@@ -86,6 +86,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 33.3333%;
+    text-align: center;
 
 }
 p{
@@ -101,13 +102,14 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 33.3333%;
+    text-align: center;
 }
 .socials{
     display: flex;
 
 }
 .footer_socials img{
-    width: 80px;
+    width: 100%;
 }
 .footer_contact{
     display: flex;
@@ -115,9 +117,13 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 33.3333%;
+    text-align: center;
 }
 .footer_contact p{
-    border-radius: 8px;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 50px;
 }
 
 @media (max-width: 767px){
@@ -146,8 +152,21 @@ h3{
     }
    .header{
         height: 300px;
-    } 
- 
+    }
+    
+    .footer_profile{
+        display: none;
+    }
+    .footer_socials{
+        width: 50%;
+    }
+    .footer_contact{
+        
+        width: 50%;
+    }
+    .footer_contact p{
+        padding: 5px 15px;
+    }
 }
 
 
