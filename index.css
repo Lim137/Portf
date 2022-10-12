@@ -87,7 +87,11 @@ body{
     flex-direction: column;
     width: 33.3333%;
     text-align: center;
+    margin-top: -13px;
 
+}
+.footer_profile h3{
+    padding-bottom: 5px;
 }
 p{
     margin: 0;
@@ -109,7 +113,7 @@ h3{
 
 }
 .footer_socials img{
-    width: 100%;
+    width: 70%;
 }
 .footer_contact{
     display: flex;
@@ -118,6 +122,11 @@ h3{
     flex-direction: column;
     width: 33.3333%;
     text-align: center;
+    margin-top: -8px;
+    gap: 6px;
+}
+.footer_contact h3{
+    
 }
 .footer_contact p{
     color: white;
@@ -161,7 +170,7 @@ h3{
         width: 50%;
     }
     .footer_contact{
-        
+        margin-top: -13px;
         width: 50%;
     }
     .footer_contact p{
