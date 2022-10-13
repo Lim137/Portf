@@ -144,6 +144,9 @@ p{
     border: 1px solid white;
     border-radius: 50px;
 }
+.footer_contact a {
+    text-decoration: none;
+}
 
 @media (max-width: 767px){
     .page{
