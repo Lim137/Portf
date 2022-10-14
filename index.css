@@ -1,7 +1,12 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   background-color: rgb(44, 41, 41);
-    margin: 0;
+   
 }
 .page{
     max-width: 1200px;
@@ -32,7 +37,7 @@ body{
     
     
     padding-top: 10%;
-   max-height: 100%;
+    max-height: 100%;
     
     background-image: url(background1.svg);
     background-size: cover;
@@ -75,45 +80,45 @@ body{
     
     
 }
-.footer{
-    box-sizing: border-box;
+
+.page__footer{
     max-height: 100%;
-    /* padding: 25px 0; */
     background: url(https://ra.ac.ae/wp-content/uploads/2014/07/section-BG-dark.jpg) center / cover no-repeat;
-  
     display: flex;
-    color: white;
-    
+    color: white; 
 }
-.footer_profile{
+
+.profile{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
+    text-align: center;
+}
+.profile_markup{
+    gap: 10%;
+    margin-top: 0.4%;
+}
+.profile_size{
     width: 33.3333%;
-    text-align: center;
-    margin-top: -13px;
-    gap: 6px;
-
-}
-.footer_profile h3{
-    padding-bottom: 5px;
-}
-p{
-    margin: 0;
 }
 
-.footer_socials{
-    
+.socials{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 33.3333%;
     text-align: center;
-
 }
-.socials{
+.socials_markup{
+    gap: 6%;
+    margin-top: 1%;
+}
+.socials_size{
+    max-width: 33.3333%;
+}
+
+.socials-logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,31 +126,35 @@ p{
     max-height: 30%;
 }
 
-.footer_socials svg{
-
-    width: 30%;
-    height: 30%;
-    
+.socials-logo__pictures{
+    width: 30%;   
 }
-.footer_contact{
+
+.contact{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 33.3333%;
+    
     text-align: center;
-    margin-top: -13px;
-    gap: 4%;
+ 
 }
-
-.footer_contact p{
+.contact_markup{
+    gap: 8%;
+    margin-top: 0.4%;
+}
+.contact_size {
+    width: 33.3333%;
+}
+.contact__link {
+    text-decoration: none;
+}
+.contact__text{
     color: white;
     padding: 10px 30px;
+    margin: 0;
     border: 1px solid white;
     border-radius: 50px;
-}
-.footer_contact a {
-    text-decoration: none;
 }
 
 @media (max-width: 767px){
@@ -176,20 +185,65 @@ p{
         height: 300px;
     }
     
-    .footer_profile{
+    .profile{
         display: none;
     }
-    .footer_socials{
+    .socials_size{
         max-width: 50%;
     }
-    .footer_contact{
-        margin-top: -18px;
-        width: 50%;
-        gap: 6%;
+    .socials_markup{
+        margin-top: 3%;
     }
-    .footer_contact p{
+    .socials-logo__pictures{
+        width: 25%;
+    }
+    .contact_size{
+        width: 50%;
+    }
+    .contact_markup{
+        gap: 9%;
+        margin-top: 1%;
+    }
+    .contact__text{
         padding: 5px 15px;
     }
+   
+  
 }
-
-
+@media (max-width: 424px){
+    .socials-logo__pictures{
+        width: 40%;
+    }
+    .socials_markup{
+    margin-top: 4.8%;
+    }
+    .contact_markup{
+        gap: 9%;
+        margin-top: 1%;
+    }
+}
+@media (max-width: 374px){
+    .socials-logo__pictures{
+        width: 45%;
+    }
+    .socials_markup{
+    margin-top: 4.9%;
+    }
+    .contact_markup{
+        gap: 9%;
+        margin-top: 1%;
+    }
+}
+@media (max-width: 320px){
+    .socials-logo__pictures{
+        width: 45%;
+    }
+    .socials_markup{
+    margin-top: 6%;
+    }
+    .contact_markup{
+        gap: 9%;
+        margin-top: 1%;
+    }
+    
+}
